@@ -1,0 +1,366 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(./images/bg.webp);
+    background-position: center center;
+    /*centers bg image horizontally and vertically */
+    /* background-size: 1200px,100vw;used to make size of background image minimum 1200pixels and maximum up to 100vw */
+    width: 100%;
+
+    background-repeat: no-repeat;
+    /*stop repeating bg image*/
+    height: 100vh;
+    position: absolute;
+}
+
+.main .box {
+    height: 100vh;
+    /*vh is view port height equal to 80% of the full screen section*/
+    width: 100%;
+    opacity: 0.7;
+    background-color: black;
+    position: absolute;
+    top: 0%;
+}
+
+nav {
+    max-width: 85vw;
+    /* viewport width*/
+    margin: 14px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 62px;
+
+}
+
+nav img {
+    color: red;
+    width: 148px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    /* used to adjust position of an object according to its orginal position */
+    z-index: 10;
+    /*used to project item upfront form the black shade given to bgimage */
+}
+
+.hero {
+    height: 86%;
+    /* height: calc(100%-62px); */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*justify content is used to align flex items */
+    flex-direction: column;
+    /* used to arrange flex items from top to bottom*/
+    font-family: "Martel Sans", sans-serif;
+    gap: 24px;
+    text-align: center;
+    padding: 20px 30px;
+    position: relative;
+    /* padding-bottom: 22vh; when height is calc */
+    /* used to adjust position of an object according to its orginal position*/
+}
+
+.hero> :nth-child(1) {
+    font-size: 40px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+
+
+
+
+}
+
+.hero> :nth-child(2) {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+
+
+
+}
+
+.hero> :nth-child(3) {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+.separation {
+
+    background-color: rgb(72, 72, 72);
+    height: 7px;
+}
+
+.btn {
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 4px;
+    color: white;
+
+
+
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-red {
+
+    background-color: red;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 20px;
+
+}
+
+.main input {
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 20px;
+    background: transparent;
+    background-color: rgb(48 63 91 / 50%);
+    color: white;
+}
+
+#btnhov:hover {
+    transition: 1s ease;
+    background-color: rgb(139, 5, 5);
+    color: white;
+
+
+
+}
+
+.btn-red-sm {
+
+
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 6.7px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+
+
+
+}
+
+
+
+.getstd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 100;
+    font-family: "Open Sans", sans-serif;
+}
+
+#english {
+    line-height: 1.25rem;
+    padding-top: 0.375rem;
+    padding-right: calc(0.25rem + 1rem);
+    padding-bottom: 0.375rem;
+    padding-left: calc(0.75rem + 1rem + -1.5rem);
+    border-radius: 6.7px;
+    background-color: rgb(46 46 49 / 33%);
+    font-family: "Open Sans", sans-serif;
+    display: inline-block;
+}
+
+#arrow {
+
+    display: inline-flex;
+    align-items: center;
+    margin-left: 8px;
+
+    margin-top: 4px;
+
+}
+
+#lan {
+    padding-right: 2px;
+    height: 2px;
+}
+
+.first {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.first div {
+    flex: 1;
+}
+
+.sec1image {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+}
+
+.sec1image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 10;
+}
+
+.sec1image video {
+    position: absolute;
+    top: 20%;
+    left: 13%;
+    width: 73%;
+    height: 56%;
+}
+
+.first div> :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+.first div>:nth-child(2) {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+}
+
+#sec3image img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+#sec3img video {
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    width: 61%;
+    height: 53%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+
+}
+
+.faq {
+    color: white;
+    background-color: black;
+}
+
+.faq h1 {
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 48px;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+.faqbox {
+    transition: all 1s ease-out;
+    color: white;
+    background-color: rgb(45, 45, 45);
+    display: flex;
+    padding: 30px;
+    max-width: 70vw;
+    margin: 12px auto;
+    justify-content: space-between;
+    font-size: 22px;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+.faqbox:hover {
+    background-color: rgb(73, 73, 73);
+
+}
+
+#ready {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    font-family: "Open Sans", sans-serif
+}
+
+footer {
+    color: white;
+    max-width: 90vw;
+    font-family: "Open Sans", sans-serif;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 60vw;
+    margin: auto;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+footer .questions {
+    margin: 2px 15vw;
+    color: rgb(191, 189, 189);
+    padding: 34px 0;
+
+}
+
+footer a {
+    color: rgb(191, 189, 189);
+    text-decoration: none;
+    size: 14px;
+    gap: 23px;
+}
+
+
+#call {
+    text-decoration: underline;
+}
+
+.foot {
+    display: inline-flex;
+    gap: 18vw;
+}
+
+.netflix {
+    margin: 5vh 0vh 0vw 13vw;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(191, 189, 189);
+}
